@@ -95,6 +95,7 @@ object RES_STRINGS {
     const val purpletv_dialog_timer__ok = "purpletv_dialog_timer__ok"
     const val purpletv_dialog_timer__cancel = "purpletv_dialog_timer__cancel"
     const val purpletv_timer_tag = "purpletv_timer"
+    const val player_control_overlay_widget__compression_button = "player_control_overlay_widget__compression_button"
     const val purpletv_highlighter_item = "purpletv_highlighter_item"
     const val purpletv_player_metadata_view_extended = "purpletv_player_metadata_view_extended"
     const val viewer_list_dialog__search = "viewer_list_dialog__search"
