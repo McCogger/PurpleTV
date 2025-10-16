@@ -9,6 +9,7 @@ import androidx.compose.ui.platform.ComposeView;
 import androidx.mediarouter.app.MediaRouteButton;
 
 import io.reactivex.subjects.PublishSubject;
+import tv.purple.monolith.features.compression.bridge.CompressionHook;
 import tv.purple.monolith.features.chapters.bridge.ChaptersHook;
 import tv.purple.monolith.features.timer.bridge.TimerHook;
 import tv.purple.monolith.features.ui.bridge.UIHook;
@@ -36,7 +37,8 @@ public class PlayerOverlayViewDelegate extends BaseViewDelegate implements IPlay
 //        orangeChaptersButton = VodChapters.get().getChaptersButton(this); // TODO: __INJECT_CODE
 //        orangeVodSpeedButton = VodSpeed.get().getVodSpeedButton(this); // TODO: __INJECT_CODE
         TimerHook.bindTimerButton(this); // TODO: __INJECT_CODE
-
+        CompressionHook.bindCompressionButton(this); // TODO: __INJECT_CODE
+        
         /* ... */
 
         Object r2 = new BottomPlayerControlOverlayViewDelegate.BottomPlayerControlListener() {
